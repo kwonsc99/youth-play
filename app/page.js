@@ -58,17 +58,16 @@ export default function Home() {
     <>
       <div className="banner">
         <div className="bannerContent">
-          <h1 className="bannerTitle">Youth Play</h1>
+          <h1 className="bannerTitle">유스플레이</h1>
           <p className="bannerSubtitle">
-            다양한 게임으로 즐거운 시간을 보내세요!
+            "걸렸잖아 한잔해~" 전투적인 술자리를 만들어보세요!
           </p>
-          <button className="primaryButton">시작하기</button>
         </div>
       </div>
 
       <div className="container">
-        <h2 className="sectionTitle">추천 게임</h2>
-        <p className="description">즐겁게 플레이하며 시간을 보내세요!</p>
+        <h2 className="sectionTitle">2025 핫한 술게임</h2>
+        <p className="description">최근 가장 인기있는 술게임으로 준비했어요!</p>
 
         <GameGrid games={sampleGames} />
       </div>
