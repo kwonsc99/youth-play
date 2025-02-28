@@ -1,0 +1,233 @@
+/* app/globals.css */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+:root {
+  --background-color: #151515;
+  --primary-500: #6922c5;
+  --primary-400: #9553dc;
+  --primary-300: #b685ed;
+  --primary-200: #d5a6f9;
+  --primary-100: #ebd2fc;
+  --text-heading: #f3f3f3;
+  --text-subheading: #e8e8e8;
+  --text-button-caption: #d9d9d9;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
+    Roboto, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-subheading);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-heading);
+  font-weight: 700;
+}
+
+.description {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-subheading);
+  margin-bottom: 2rem;
+}
+
+.footer {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #1a1a1a;
+  color: var(--text-button-caption);
+  font-size: 0.9rem;
+}
+
+/* globals.css에 추가 */
+.header {
+  background-color: rgba(30, 30, 30, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #2a2a2a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.headerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  background: linear-gradient(90deg, var(--primary-400), var(--primary-200));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navLink {
+  color: var(--text-subheading);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  color: var(--primary-300);
+}
+
+/* globals.css에 추가 */
+.banner {
+  background: linear-gradient(135deg, #6922c5 0%, #1e1e1e 100%);
+  padding: 4rem 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/images/pattern.png");
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.bannerContent {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bannerTitle {
+  font-size: 3.5rem;
+  color: var(--text-heading);
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.bannerSubtitle {
+  font-size: 1.4rem;
+  color: var(--text-subheading);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.primaryButton {
+  background-color: var(--primary-500);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Pretendard", sans-serif;
+}
+
+.primaryButton:hover {
+  background-color: var(--primary-400);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(105, 34, 197, 0.3);
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: var(--text-heading);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 3rem 1rem;
+  }
+
+  .bannerTitle {
+    font-size: 2.5rem;
+  }
+
+  .bannerSubtitle {
+    font-size: 1.2rem;
+  }
+
+  .primaryButton {
+    padding: 0.7rem 1.7rem;
+    font-size: 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerContainer {
+    padding: 0.8rem 1rem;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .nav {
+    gap: 1rem;
+  }
+
+  .navLink {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .footer {
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+}
