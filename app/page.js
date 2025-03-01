@@ -5,7 +5,7 @@ import GameGrid from "../components/GameGrid";
 const sampleGames = [
   {
     id: "missiongame",
-    title: "갓챠게임",
+    title: "미션게임",
     description: "뽑기에서 나온 미션을 수행하지 못하면 한잔 그냥 마시면 돼~",
     thumbnail: "/images/thumbnails/quiz.jpg",
   },
