@@ -22,9 +22,9 @@ export default function Home() {
     <>
       <div className="banner">
         <div className="bannerContent">
-          <h1 className="bannerTitle">유스플레이</h1>
+          {/* <h1 className="bannerTitle">유스플레이</h1> */}
           <p className="bannerSubtitle">
-            &quot;걸렸잖아 한잔해~&quot; 전투적인 술자리를 만들어보세요!
+            &quot;걸렸잖아 한잔해~&quot;<br></br>전투적인 술자리를 만들어보세요!
           </p>
         </div>
       </div>

@@ -16,17 +16,6 @@ export default function RootLayout({ children }) {
             <Link href="/" className="logo">
               Youth Play
             </Link>
-            <nav className="nav">
-              <Link href="/" className="navLink">
-                홈
-              </Link>
-              <Link href="/about" className="navLink">
-                소개
-              </Link>
-              <Link href="/contact" className="navLink">
-                문의
-              </Link>
-            </nav>
           </div>
         </header>
         <main>{children}</main>
