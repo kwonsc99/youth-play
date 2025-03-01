@@ -84,6 +84,7 @@
   color: #333;
   text-align: center;
   padding: 1rem;
+  white-space: pre-line;
 }
 
 .missionText {

@@ -145,7 +145,6 @@ a {
 .bannerSubtitle {
   font-size: 1.4rem;
   color: var(--text-subheading);
-  margin-bottom: 2rem;
   line-height: 1.5;
 }
 
@@ -178,7 +177,7 @@ a {
 
 @media (max-width: 768px) {
   .banner {
-    padding: 3rem 1rem;
+    padding: 1rem 1rem;
   }
 
   .bannerTitle {
